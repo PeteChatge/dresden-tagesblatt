@@ -1,4 +1,10 @@
-git init
+@echo off
+cd /d "%~dp0"
 git add .
-git commit -m "dresden-tagesblatt v1"
-gh repo create dresden-tagesblatt --public --source=. --push
+if "%~1"=="" (
+  git commit -m "update %date% %time%"
+) else (
+  git commit -m "%*"
+)
+git push
+pause
