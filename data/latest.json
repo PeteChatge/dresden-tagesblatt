@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-04T22:20:31.041264+00:00",
+  "generated_at": "2026-10-04T22:25:36.990417+00:00",
   "hinweis": "Kurzzusammenfassungen + Link, keine Volltexte. Sätze abgeschlossen.",
   "wetter": {
     "ok": true,
-    "text": "Dresden aktuell 12.6 °C. Heute max 20.2 °C, min 10.8 °C. Regenwahrscheinlichkeit max 0 Prozent.",
+    "text": "Dresden aktuell 11.3 °C. Heute max 20.3 °C, min 9.4 °C. Regenwahrscheinlichkeit max 0 Prozent.",
     "quelle": "Open-Meteo (CC-BY 4.0)",
     "raw_time": "2026-10-05T00:15"
   },
@@ -149,7 +149,7 @@
       "titel": "Auswirkungen der Trockenheit – So trocken war es für Bäume und Tiere im Hitzesommer.",
       "link": "https://www.srf.ch/news/schweiz/auswirkungen-der-trockenheit-so-trocken-war-es-fuer-baeume-und-tiere-im-hitzesommer",
       "datum": "Sun, 04 Oct 2026 18:50:15 +0200",
-      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/0b003f.webp\" hspace=\"5\" align=\"left\" >Nach dem Sommer zeigen Messungen: Fast überall war der Wald zu trocken. Bäume und auch Tiere spüren den Wassermangel."
+      "kurz": "Nach dem Sommer zeigen Messungen: Fast überall war der Wald zu trocken. Bäume und auch Tiere spüren den Wassermangel."
     },
     {
       "quelle": "srf",
@@ -160,7 +160,7 @@
       "titel": "Steigende Gesundheitskosten – Die Community schlägt Lösungen vor – Experten antworten.",
       "link": "https://www.srf.ch/news/dialog/steigende-gesundheitskosten-die-community-schlaegt-loesungen-vor-experten-antworten",
       "datum": "Sun, 04 Oct 2026 18:01:28 +0200",
-      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/f889a3e.webp\" hspace=\"5\" align=\"left\" >Unsere User haben Vorschläge gemacht, was gegen die stetig steigenden Prämien zu tun wäre. Drei Expertinnen antworten."
+      "kurz": "Unsere User haben Vorschläge gemacht, was gegen die stetig steigenden Prämien zu tun wäre. Drei Expertinnen antworten."
     },
     {
       "quelle": "srf",
@@ -171,7 +171,7 @@
       "titel": "Wiesn in München – Oktoberfest 2026 bricht Rekord: 7.4 Millionen Besucher.",
       "link": "https://www.srf.ch/news/international/wiesn-in-muenchen-oktoberfest-2026-bricht-rekord-7-4-millionen-besucher",
       "datum": "Sun, 04 Oct 2026 15:26:53 +0200",
-      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/4e020b4.webp\" hspace=\"5\" align=\"left\" >Auf dem Münchner Oktoberfest war noch nie so viel los wie in diesem Jahr. Doch es gab auch traurige Vorfälle."
+      "kurz": "Auf dem Münchner Oktoberfest war noch nie so viel los wie in diesem Jahr. Doch es gab auch traurige Vorfälle."
     },
     {
       "quelle": "srf",
@@ -182,7 +182,7 @@
       "titel": "Menschliches Gefässsystem – Unsere Gefässe – die Autobahnen des Körpers.",
       "link": "https://www.srf.ch/wissen/gesundheit/menschliches-gefaesssystem-unsere-gefaesse-die-autobahnen-des-koerpers",
       "datum": "Sun, 04 Oct 2026 19:51:05 +0200",
-      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/b4ed9f.webp\" hspace=\"5\" align=\"left\" >Blutgefässe versorgen alle Organe mit Sauerstoff und Nährstoffen. Deshalb sollten wir Sorge zu ihnen tragen."
+      "kurz": "Blutgefässe versorgen alle Organe mit Sauerstoff und Nährstoffen. Deshalb sollten wir Sorge zu ihnen tragen."
     },
     {
       "quelle": "srf",
@@ -193,7 +193,7 @@
       "titel": "Krieg in der Ukraine – Merz an Putin: «Hören Sie diesen sinnlosen Krieg auf!».",
       "link": "https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-merz-an-putin-hoeren-sie-diesen-sinnlosen-krieg-auf",
       "datum": "Sun, 04 Oct 2026 22:52:24 +0200",
-      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/c09a59.webp\" hspace=\"5\" align=\"left\" >Während des Besuchs des deutschen Bundeskanzlers in der Ukraine gab es mehrmals Luftalarm."
+      "kurz": "Während des Besuchs des deutschen Bundeskanzlers in der Ukraine gab es mehrmals Luftalarm."
     },
     {
       "quelle": "srf",
@@ -204,7 +204,7 @@
       "titel": "Regierungswahlen Kanton Zug – Alle Bisherigen wiedergewählt – Laura Dittli mit bestem Resultat.",
       "link": "https://www.srf.ch/news/schweiz/regierungswahlen-kanton-zug-alle-bisherigen-wiedergewaehlt-laura-dittli-mit-bestem-resultat",
       "datum": "Sun, 04 Oct 2026 18:25:09 +0200",
-      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/7df1cd.webp\" hspace=\"5\" align=\"left\" >Keine Überraschung im Kanton Zug: Alle Regierungsratsmitglieder werden bestätigt. Link-Grün schafft es erneut nicht."
+      "kurz": "Keine Überraschung im Kanton Zug: Alle Regierungsratsmitglieder werden bestätigt. Link-Grün schafft es erneut nicht."
     },
     {
       "quelle": "hungary_today",
@@ -215,7 +215,7 @@
       "titel": "What the UAE aviation FZ1073 incident can teach Hungary about resilient critical systems.",
       "link": "https://dailynewshungary.com/fz1073-security-lessons-hungary/",
       "datum": "Sun, 04 Oct 2026 15:36:00 +0000",
-      "kurz": "The security incident aboard flydubai flight FZ1073 on 30 September is still under investigation, and that fact should discipline every serious discussion of it. UAE authorities have confirmed that the flight from Dubai to Tel Aviv experienced a security incident, was diverted and landed safely at Tabuk Airport in Saudi Arabia. The UAE Attorney-General has formed a specialised investigation team to establish the circumstances and motives, while officials have warned against speculation. I agree with that caution. We do not need to guess the motive to recognise the security question the incident has placed in front of us. FZ1073 incident raises security lessons for Hungary: Continue reading."
+      "kurz": "The security incident aboard flydubai flight FZ1073 on 30 September is still under investigation, and that fact should discipline every serious discussion of it. UAE authorities have confirmed that the flight from Dubai to Tel Aviv experienced a security incident, was diverted and landed safely at Tabuk Airport in Saudi Arabia. The UAE Attorney-General has formed a specialised investigation team to establish the circumstances and motives, while officials have warned against speculation. I agree with that caution. We do not need to guess the motive to recognise the security question the incident has placed in front of us. FZ1073 incident raises security lessons for Hungary."
     },
     {
       "quelle": "hungary_today",
@@ -226,7 +226,7 @@
       "titel": "Budapest to get more police officers as public safety moves up the agenda.",
       "link": "https://dailynewshungary.com/budapest-get-more-police-officers-2026/",
       "datum": "Sun, 04 Oct 2026 04:34:00 +0000",
-      "kurz": "Budapest could soon see a visibly stronger police presence, with the government promising a significant increase in officers as public safety becomes a bigger focus in the capital. Continue reading."
+      "kurz": "Budapest could soon see a visibly stronger police presence, with the government promising a significant increase in officers as public safety becomes a bigger focus in the capital."
     },
     {
       "quelle": "hungary_today",
@@ -237,7 +237,7 @@
       "titel": "Missed the week in Hungary? Here are the key stories to know.",
       "link": "https://dailynewshungary.com/missed-the-week-in-hungary-here-are-the-key-stories-to-know/",
       "datum": "Sat, 03 Oct 2026 16:04:00 +0000",
-      "kurz": "This week’s Hungary Weekly Briefing covers the biggest developments shaping the country: the investigations involving former Orbán-era ministers, major political and transport changes in Budapest, the latest moves in the Hungarian economy, and a busy week in diplomacy — including rising tensions with Russia. The week in Hungary on the Substack newsletter. Continue reading."
+      "kurz": "This week’s Hungary Weekly Briefing covers the biggest developments shaping the country: the investigations involving former Orbán-era ministers, major political and transport changes in Budapest, the latest moves in the Hungarian economy, and a busy week in diplomacy — including rising tensions with Russia. The week in Hungary on the Substack newsletter."
     },
     {
       "quelle": "hungary_today",
@@ -248,7 +248,7 @@
       "titel": "Hungarian payment technology powers transactions at Malaysia’s Sepang Circuit.",
       "link": "https://dailynewshungary.com/hungarian-payment-tech-sepang-circuit/",
       "datum": "Sat, 03 Oct 2026 14:25:00 +0000",
-      "kurz": "The F1 Bahrain Grand Prix in Malaysia got underway today, with Festipay technology once again providing fast and secure cashless payment at the Bahrain International Circuit (BIC) event. Continue reading."
+      "kurz": "The F1 Bahrain Grand Prix in Malaysia got underway today, with Festipay technology once again providing fast and secure cashless payment at the Bahrain International Circuit (BIC) event."
     },
     {
       "quelle": "hungary_today",
@@ -259,7 +259,7 @@
       "titel": "Watch here: Hungarian foreign minister Anita Orbán speaks to CNN about changes under new government –.",
       "link": "https://dailynewshungary.com/anita-orban-cnn-new-government/",
       "datum": "Sat, 03 Oct 2026 07:59:05 +0000",
-      "kurz": "Hungarian Foreign Minister Anita Orbán spoke to CNN on the sidelines of the UN General Assembly’s High-level Week in New York, outlining changes in Hungary’s foreign policy under the new government and discussing the country’s approach to Ukraine’s EU accession. Continue reading."
+      "kurz": "Hungarian Foreign Minister Anita Orbán spoke to CNN on the sidelines of the UN General Assembly’s High-level Week in New York, outlining changes in Hungary’s foreign policy under the new government and discussing the country’s approach to Ukraine’s EU accession."
     },
     {
       "quelle": "hungary_today",
@@ -281,7 +281,7 @@
       "titel": "Schulze zu Sachsen-Anhalt: \"Es wird keiner von der CDU zur AfD wechseln\".",
       "link": "https://www.tagesschau.de/inland/innenpolitik/sachsen-anhalt-schulze-bab-100.html",
       "datum": "Sun, 04 Oct 2026 20:40:10 +0200",
-      "kurz": "Die AfD will nach der Wahl in Sachsen-Anhalt regieren, doch ihr fehlt bisher eine Mehrheit. CDU-Fraktionschef Schulze bekräftigte im Bericht aus Berlin , dass die AfD bei der Ministerpräsidentenwahl nicht auf CDU-Stimmen setzen könne.[ mehr ]."
+      "kurz": "Die AfD will nach der Wahl in Sachsen-Anhalt regieren, doch ihr fehlt bisher eine Mehrheit. CDU-Fraktionschef Schulze bekräftigte im Bericht aus Berlin , dass die AfD bei der Ministerpräsidentenwahl nicht auf CDU-Stimmen setzen könne."
     },
     {
       "quelle": "tagesschau",
@@ -292,7 +292,7 @@
       "titel": "Regierung im Jemen verkündet Großoffensive gegen Huthi-Miliz.",
       "link": "https://www.tagesschau.de/ausland/asien/jemen-huthi-kaempfe-100.html",
       "datum": "Sun, 04 Oct 2026 19:43:26 +0200",
-      "kurz": "Nach militärischen Erfolgen der Huthi will Jemens international anerkannte Regierung nun in die Offensive gehen. Ziel sei es, das Land aus dem Griff der Miliz zu befreien. Doch das dürfte nicht so einfach sein. Von Anna Osius. [ mehr ]."
+      "kurz": "Nach militärischen Erfolgen der Huthi will Jemens international anerkannte Regierung nun in die Offensive gehen. Ziel sei es, das Land aus dem Griff der Miliz zu befreien. Doch das dürfte nicht so einfach sein. Von Anna Osius."
     },
     {
       "quelle": "tagesschau",
@@ -303,7 +303,7 @@
       "titel": "Pfefferspray-Angriff auf Linken-Geschäftsstelle in Oranienburg.",
       "link": "https://www.tagesschau.de/inland/regional/brandenburg/rbb-oranienburg-angriff-auf-linken-veranstaltung-in-parteibuero-reizgas-versprueht-100.html",
       "datum": "Sun, 04 Oct 2026 20:58:00 +0200",
-      "kurz": "Mitglieder der Linksjugend sind in der Geschäftsstelle der Linken in Oranienburg mit Pfefferspray attackiert worden. Die Polizei sucht nach drei Personen. Eine von ihnen soll kurz vor dem Angriff gefragt haben, ob man hier AfD wählen könne.[ mehr ]."
+      "kurz": "Mitglieder der Linksjugend sind in der Geschäftsstelle der Linken in Oranienburg mit Pfefferspray attackiert worden. Die Polizei sucht nach drei Personen. Eine von ihnen soll kurz vor dem Angriff gefragt haben, ob man hier AfD wählen könne."
     },
     {
       "quelle": "tagesschau",
@@ -314,7 +314,7 @@
       "titel": "Merz: Ukraine-Hilfen \"notwendig für die Stabilität Europas\".",
       "link": "https://www.tagesschau.de/ausland/europa/merz-kiew-ukraine-russland-100.html",
       "datum": "Sun, 04 Oct 2026 18:43:05 +0200",
-      "kurz": "Kanzler Merz hat bei seinem Besuch in Kiew erneut Russland zu einem Ende des Krieges aufgefordert. Im Bericht aus Berlin sagte er, für die Stabilität Europas seien weitere Hilfen für die Ukraine wichtig - genau wie eine zuverlässige Bundesregierung.[ mehr ]."
+      "kurz": "Kanzler Merz hat bei seinem Besuch in Kiew erneut Russland zu einem Ende des Krieges aufgefordert. Im Bericht aus Berlin sagte er, für die Stabilität Europas seien weitere Hilfen für die Ukraine wichtig - genau wie eine zuverlässige Bundesregierung."
     },
     {
       "quelle": "tagesschau",
@@ -325,7 +325,7 @@
       "titel": "125 Jahre Nobelpreis: Was macht die Auszeichnung so bedeutend?",
       "link": "https://www.tagesschau.de/wissen/forschung/nobelpreise-125-jahre-100.html",
       "datum": "Sun, 04 Oct 2026 18:06:59 +0200",
-      "kurz": "Von morgen an wird wieder verkündet, wer die diesjährigen Nobelpreise erhält - und das seit mittlerweile 125 Jahren. Warum hat die Auszeichnung eine so hohe Bedeutung? Und wie werden die Preisträger ermittelt? Von Nina Kunze. [ mehr ]."
+      "kurz": "Von morgen an wird wieder verkündet, wer die diesjährigen Nobelpreise erhält - und das seit mittlerweile 125 Jahren. Warum hat die Auszeichnung eine so hohe Bedeutung? Und wie werden die Preisträger ermittelt? Von Nina Kunze."
     },
     {
       "quelle": "tagesschau",
@@ -336,7 +336,7 @@
       "titel": "Hamburg behält Vorsitz der Justizministerkonferenz.",
       "link": "https://www.tagesschau.de/inland/justizministerkonferenz-vorsitz-100.html",
       "datum": "Sun, 04 Oct 2026 16:51:32 +0200",
-      "kurz": "Die Regierungsbildung in Sachsen-Anhalt wirbelt auch auf Länderebene einiges durcheinander. Hamburg hätte den Vorsitz der Justizministerkonferenz eigentlich abgeben müssen - macht nun aber weiter. [ mehr ]."
+      "kurz": "Die Regierungsbildung in Sachsen-Anhalt wirbelt auch auf Länderebene einiges durcheinander. Hamburg hätte den Vorsitz der Justizministerkonferenz eigentlich abgeben müssen - macht nun aber weiter."
     },
     {
       "quelle": "zdf",
@@ -413,7 +413,7 @@
       "titel": "GEW drängt auf Arbeitszeiterfassung für Lehrer.",
       "link": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/gew-thueringen-sachsen-arbeitszeiterfassung-lehrerinnen-und-lehrer-,arbeitszeiterfassung-lehrer-100.html",
       "datum": "Sun, 04 Oct 2026 13:12:59 +0200",
-      "kurz": "Elterngespräche, Tagungen, Exkursionen - sollte diese Mehrarbeit im Lehrerberuf erfasst werden? Ja, sagt die Gewerkschaft GEW. Bremen ist schon einen Schritt weiter und startet ein Pilotprojekt.[ mehr ]."
+      "kurz": "Elterngespräche, Tagungen, Exkursionen - sollte diese Mehrarbeit im Lehrerberuf erfasst werden? Ja, sagt die Gewerkschaft GEW. Bremen ist schon einen Schritt weiter und startet ein Pilotprojekt."
     },
     {
       "quelle": "mdr_sachsen",
@@ -424,7 +424,7 @@
       "titel": "Migration: Immer weniger Asylsuchende in Sachsen-Anhalt.",
       "link": "https://www.mdr.de/nachrichten/sachsen-anhalt/migration-asybewerber-zahlen-100,asylsuchende-rueckgang-100.html",
       "datum": "Sun, 04 Oct 2026 17:19:38 +0200",
-      "kurz": "In Sachsen-Anhalt sind erneut deutlich weniger Asylsuchende registriert worden. Ministerium und Wissenschaft nennen unterschiedliche Gründe. [ mehr ]."
+      "kurz": "In Sachsen-Anhalt sind erneut deutlich weniger Asylsuchende registriert worden. Ministerium und Wissenschaft nennen unterschiedliche Gründe."
     },
     {
       "quelle": "mdr_sachsen",
@@ -435,7 +435,7 @@
       "titel": "Vom Lehrermangel zum Gänsehautmoment: Philharmonie unterstützt Musikunterricht in Greiz.",
       "link": "https://www.mdr.de/nachrichten/thueringen/ost-thueringen/greiz/musikunterricht-schule-100.html",
       "datum": "Sun, 04 Oct 2026 12:27:48 +0200",
-      "kurz": "Lehrermangel fiel der Musikunterricht an der Lessingschule in Greiz aus. Die Vogtland Philharmonie sprang ein und ermöglichte Schülern eine besondere musikalische Erfahrungen.[ mehr ]."
+      "kurz": "Lehrermangel fiel der Musikunterricht an der Lessingschule in Greiz aus. Die Vogtland Philharmonie sprang ein und ermöglichte Schülern eine besondere musikalische Erfahrungen."
     },
     {
       "quelle": "mdr_sachsen",
@@ -446,7 +446,7 @@
       "titel": "Krankenhausstandort Pößneck soll erhalten bleiben.",
       "link": "https://www.mdr.de/nachrichten/thueringen/ost-thueringen/saale-orla/standort-erhalt-foerdermittel-medizin-versorgung,krankenhaus-poessneck-100.html",
       "datum": "Sun, 04 Oct 2026 16:03:30 +0200",
-      "kurz": "Der Krankenhausstandort Pößneck soll erhalten bleiben. Doch Finanzierung und Fördermittel bleiben weiterhin unklar.[ mehr ]."
+      "kurz": "Der Krankenhausstandort Pößneck soll erhalten bleiben. Doch Finanzierung und Fördermittel bleiben weiterhin unklar."
     },
     {
       "quelle": "mdr_sachsen",
@@ -457,7 +457,7 @@
       "titel": "Steckby: Deutsche Meisterschaft im Gespannpflügen.",
       "link": "https://www.mdr.de/nachrichten/sachsen-anhalt/dessau/anhalt/deutsche-meisterschaft-steckby-100,gespannpfluegen-100.html",
       "datum": "Sun, 04 Oct 2026 16:29:12 +0200",
-      "kurz": "In Steckby bei Zerbst hat am Wochenende die Deutsche Meisterschaft im Gespannpflügen stattgefunden. Die Veranstalter wollen damit eine fast vergessene Technik erhalten und an jüngere Generationen weitergeben.[ mehr ]."
+      "kurz": "In Steckby bei Zerbst hat am Wochenende die Deutsche Meisterschaft im Gespannpflügen stattgefunden. Die Veranstalter wollen damit eine fast vergessene Technik erhalten und an jüngere Generationen weitergeben."
     },
     {
       "quelle": "mdr_sachsen",
@@ -468,7 +468,7 @@
       "titel": "Mahngang nach Stolperstein-Beschluss in Heidenau.",
       "link": "https://www.mdr.de/nachrichten/sachsen/dresden/freital-pirna/stolperstein-mahngang-100.html",
       "datum": "Sun, 04 Oct 2026 17:31:58 +0200",
-      "kurz": "Nach dem Stolperstein-Verbot in Heidenau haben sich am Sonntag zahlreiche Menschen einem Mahngang angeschlossen. Dazu aufgerufen hatte der Verein \"AKuBiz\". [ mehr ]."
+      "kurz": "Nach dem Stolperstein-Verbot in Heidenau haben sich am Sonntag zahlreiche Menschen einem Mahngang angeschlossen. Dazu aufgerufen hatte der Verein \"AKuBiz\"."
     }
   ],
   "stimmung": {

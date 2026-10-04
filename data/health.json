@@ -1,6 +1,6 @@
 {
   "meta": {
-    "check_zeit": "2026-10-04T22:20:31.041264+00:00",
+    "check_zeit": "2026-10-04T22:25:36.990417+00:00",
     "modus": "fetch",
     "fresh_h": 48,
     "stale_h": 96
@@ -98,7 +98,7 @@
       "http": 200,
       "items": 50,
       "neueste": "2026-10-04T17:51:35+00:00",
-      "alter_h": 4.5,
+      "alter_h": 4.6,
       "status": "ok",
       "fehler": null
     },
@@ -112,7 +112,7 @@
       "http": 200,
       "items": 30,
       "neueste": "2026-10-04T21:30:42+00:00",
-      "alter_h": 0.8,
+      "alter_h": 0.9,
       "status": "ok",
       "fehler": null
     },
@@ -125,7 +125,7 @@
       "url_ok": "https://www.srf.ch/news/bnf/rss/1646",
       "http": 200,
       "items": 80,
-      "neueste": "2026-10-04T22:15:55+00:00",
+      "neueste": "2026-10-04T22:20:59+00:00",
       "alter_h": 0.1,
       "status": "ok",
       "fehler": null
@@ -143,7 +143,7 @@
       "http": 200,
       "items": 20,
       "neueste": "2026-10-04T15:36:00+00:00",
-      "alter_h": 6.7,
+      "alter_h": 6.8,
       "status": "ok",
       "fehler": null
     },
@@ -174,7 +174,7 @@
       "http": 200,
       "items": 40,
       "neueste": "2026-10-04T19:06:02+00:00",
-      "alter_h": 3.2,
+      "alter_h": 3.3,
       "status": "ok",
       "fehler": null
     },
@@ -188,7 +188,7 @@
       "http": 200,
       "items": 186,
       "neueste": "2026-10-04T22:00:00+00:00",
-      "alter_h": 0.3,
+      "alter_h": 0.4,
       "status": "ok",
       "fehler": null
     },
@@ -201,8 +201,8 @@
       "url_ok": "https://www.mdr.de/nachrichten/index-rss.xml",
       "http": 200,
       "items": 44,
-      "neueste": "2026-10-04T21:36:06+00:00",
-      "alter_h": 0.7,
+      "neueste": "2026-10-04T22:22:04+00:00",
+      "alter_h": 0.1,
       "status": "ok",
       "fehler": null
     }

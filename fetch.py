@@ -55,8 +55,12 @@ KURZ_LIMIT = 700  # Auszugslänge: ausführlich genug für eigenes Bild, kein Vo
 
 def clean_text(t: str, limit: int = KURZ_LIMIT) -> str:
     t = (t or "").replace("<![CDATA[", "").replace("]]>", "")
-    t = html.unescape(re.sub(r"<[^>]+>", " ", t))
+    t = re.sub(r"<[^>]+>", " ", html.unescape(t))  # erst ent-escapen, dann Tags weg
     t = re.sub(r"\s+", " ", t).strip()
+    # Tote Feed-Boilerplates entfernen ("[mehr]"/"Continue reading" sind kein
+    # Knopf, der Rest steht im Original) – dort führt "Mehr im Original ↗" hin.
+    t = re.sub(r"\s*\[?\s*mehr\s*\]?\s*\.?\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s*(Continue reading|Read more|Weiterlesen|Weiter lesen)\s*\.?\s*$", "", t, flags=re.I)
     if len(t) > limit:
         # Satzweise kürzen: möglichst an einem Satzende nahe dem Limit trennen,
         # damit keine Fantasie-Lücken durch abgerissene Halbsätze entstehen.
