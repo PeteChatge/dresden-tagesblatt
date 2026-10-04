@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dresden-Tagesblatt — Gewichtet nach Prio-Regeln V1</title>
+<meta name="description" content="Tägliches Dresden-Tagesblatt: I Dresden, II Umland, III Sachsen, IV Ost ohne Sachsen, V West. Nur Zusammenfassungen + Links, Sätze abgeschlossen, mit Vorlesefunktion.">
+<style>
+:root{--bg:#0b0f1a;--panel:#121826;--panel2:#162032;--border:#23324d;--text:#e9eef7;--muted:#9aa8c3;--faint:#6b7a96;--accent:#5b9cff;--accent2:#7ee8c8;--warn:#f0b429;--radius:14px}
+[data-theme="light"]{--bg:#f4f6fb;--panel:#ffffff;--panel2:#eef2f9;--border:#c9d4e8;--text:#0e1626;--muted:#43536e;--faint:#6b7a96;--accent:#0b5cff;--accent2:#0a7a5c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;min-height:100vh}
+a{color:var(--accent)}a:hover{text-decoration:underline}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px 80px}
+.topbar{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--border)}
+.topbar-inner{max-width:1200px;margin:0 auto;padding:10px 18px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{display:flex;gap:10px;align-items:center}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:900;color:#0b0f1a}
+.brand h1{font-size:17px}.brand small{color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pill{border:1px solid var(--border);background:var(--panel2);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+.btn{border:1px solid var(--border);background:var(--panel2);color:var(--text);padding:8px 12px;border-radius:10px;font-size:12px;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700}
+.banner{border:1px dashed var(--border);background:var(--panel);border-radius:12px;padding:10px 14px;margin:14px 0;font-size:13px;color:var(--muted)}
+.banner b{color:var(--text)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.card.full{grid-column:1/-1}
+.card h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:12px 14px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.card h2 b{color:var(--text);text-transform:none;letter-spacing:0;font-size:14px}
+.card-body{padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.sub{border:1px solid var(--border);background:var(--panel2);border-radius:10px;padding:10px 12px}
+.sub h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.art{border-top:1px solid var(--border);padding:8px 0}
+.art:first-child{border-top:none}
+.art h4{font-size:14px;line-height:1.35}
+.art p{font-size:13px;color:var(--muted);margin:4px 0}
+.art .row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:6px}
+.chip{font-size:10px;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted);background:var(--panel)}
+.chip.owner{border-color:var(--warn);color:var(--warn)}
+.mini{font-size:11px;color:var(--faint)}
+.speak{font-size:11px;padding:4px 8px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--text);cursor:pointer}
+.footer{margin-top:16px;font-size:11px;color:var(--faint)}
+.footer table{width:100%;border-collapse:collapse;margin-top:8px;font-size:11px}
+.footer th,.footer td{border:1px solid var(--border);padding:6px 8px;text-align:left;vertical-align:top}
+.footer th{color:var(--muted)}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.toolbar input{flex:1;min-width:200px;padding:9px 12px;border-radius:8px;border:1px solid var(--border);background:var(--panel);color:var(--text)}
+.empty{padding:18px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+<div class="brand"><div class="logo">DD</div><div><h1>Dresden-Tagesblatt</h1><small>Gewichtet nach Prio-Regeln V1 · kein Neutral-Etikett</small></div></div>
+<div class="meta">
+<span class="pill" id="pill-date">Stand: lädt…</span>
+<span class="pill" id="pill-count">0 Artikel</span>
+<button class="btn" id="btn-theme" title="Hell/dunkel umschalten">☾/☀ Hell–Dunkel</button>
+<button class="btn" id="btn-read-all">▶ Alles vorlesen</button>
+<button class="btn" id="btn-stop">■ Stopp</button>
+</div>
+</div></div>
+<div class="wrap">
+<div class="banner"><b>Hinweis zur Einordnung:</b> Diese Seite ist <b>nicht neutral</b>, sondern nach deinen Prio-Regeln gewichtet: Exekutive zuerst, dann Judikative, dann NIUS/Welt, dann Nachbar-Ausland, ÖRR zuletzt. Wertende Meldungen brauchen 2 Träger. Nur <b>Kurzzusammenfassungen mit abgeschlossenem Satz + Link</b>, keine Volltexte. Behauptungen (z. B. zu Parteien, Verfassungsschutz, Medienbesitz) werden als solche gelabelt – bitte selbst prüfen.</div>
+<div class="toolbar"><input id="q" placeholder="Filtern, z. B. Polizei, DVB, Haushalt, Demo…"><button class="btn primary" id="btn-today">Neu laden (fetch.py)</button></div>
+<div class="grid" id="grid"></div>
+<div class="card full"><h2><b>Verkehr + Wetter Dresden</b><span class="mini">DVB/VVO + Open-Meteo</span></h2><div class="card-body" id="service"></div></div>
+<div class="card full"><h2><b>Stimmung Gesamtdeutschland</b><span class="mini">nur grob</span></h2><div class="card-body" id="stimmung"></div></div>
+<div class="card full footer"><h2><b>Kleingedrucktes: Wem gehört was – Nachrichten richtig lesen</b></h2><div class="card-body">
+<p>Eigentümer-Transparenz hilft einordnen, ersetzt aber keine Zweitquelle. „Geldhahn“ gilt hier nur für Presse (wer finanziert wen), nicht für Behörden als Faktquelle. Einordnung in Klammern ist Redaktionshinweis, kein Beweis für Falschberichterstattung.</p>
+<table id="owner-table"><tr><th>Medium</th><th>Eigentümer / Finanzierung</th><th>Gruppe hier</th></tr></table>
+<p style="margin-top:8px">DDVG-Hinweis: Die Deutsche Druck- und Verlagsgesellschaft (DDVG) ist eine SPD-Beteiligungsholding (belegt über Handelsregister/Impressen). Ob und wie sich das auf einzelne Artikel auswirkt, ist damit <b>nicht</b> belegt und muss pro Meldung mit Zweitquelle geprüft werden. Ebenso sind Aussagen über Parteien, Behörden oder „Gleichschaltung“ Meinungen, keine Fakten, solange kein Gerichtsbeschluss / keine Primärquelle verlinkt ist.</p>
+<p>Methodik: <code>python3 fetch.py</code> täglich laufen lassen, dann Seite neu laden. Mit <code>python3 fetch.py --export</code> entsteht zusätzlich <code>index-export.html</code> als monolithische Einzeldatei für GitHub Pages.</p>
+</div></div>
+</div>
+<script>
+/*__SNAPSHOT__*/
+const $=s=>document.querySelector(s);
+function period(s){s=(s||"").trim();if(!s)return s;return /[.!?]$/.test(s)?s:s+".";}
+function speak(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="de-DE";speechSynthesis.speak(u);}catch(e){alert("Vorlesen nicht verfügbar.");}}
+$("#btn-stop").onclick=()=>{try{speechSynthesis.cancel();}catch(e){}};
+$("#btn-theme").onclick=()=>{const h=document.documentElement;h.dataset.theme=h.dataset.theme==="light"?"dark":"light";try{localStorage.setItem("dd-theme",h.dataset.theme);}catch(e){}};
+try{const t=localStorage.getItem("dd-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}
+// Blöcke: I Dresden, II Umland, III Sachsen, IV Ost ohne Sachsen, V West
+const BLOCKS=[
+ {id:"I",titel:"I. Stadtgebiet Dresden (detailliert)",filter:a=>/^(I\b|I-)/.test(a.region)||/dresden|polizei_sachsen|stadt_dresden|justiz_sachsen/i.test(a.quelle),detail:true},
+ {id:"II",titel:"II. Dresdner Umland",filter:a=>/^II/.test(a.region)||/umland|vvo|dvb/i.test(a.titel+a.kurz)},
+ {id:"III",titel:"III. Bundesland Sachsen",filter:a=>/^III/.test(a.region)||/sachsen|mdr_sachsen|chemnitz|leipzig/i.test(a.titel+a.kurz)},
+ {id:"IV",titel:"IV. Mitteldeutschland / Ost ohne Sachsen",filter:a=>/^IV/.test(a.region)||/brandenburg|thüringen|thueringen|sachsen-anhalt|mecklenburg|berlin|baltikum|polen|tschech|prag/i.test(a.titel+a.kurz+a.quelle)},
+ {id:"V",titel:"V. Restliches West-/Gesamtdeutschland + Nachbar-Ausland",filter:_=>true}
+];
+const SUBS=[
+ {id:"exekutive",t:"Exekutive: Polizei / Verwaltung / DVB / Amtsblatt"},
+ {id:"judikative",t:"Judikative (mit Vorbehalt)"},
+ {id:"heer",t:"Heer + Haushalt (Geldfluss)"},
+ {id:"kritisch-inland",t:"Kritische Inlandpresse"},
+ {id:"ausland-nachbarn",t:"Auslandpresse Nachbarn"},
+ {id:"oerr-mainstream",t:"Staatlich/ÖRR-Inlandpresse (zuletzt)"}
+];
+function gruppeZuSub(a){
+ if(/bundeswehr|bundeshaushalt|heer|haushalt/i.test(a.quelle+a.titel))return "heer";
+ return a.gruppe||"oerr-mainstream";
+}
+let ALL=[];
+function render(filterText){
+ const grid=$("#grid");grid.innerHTML="";
+ const f=(filterText||"").toLowerCase();
+ const list=ALL.filter(a=>!f||(a.titel+" "+a.kurz+" "+a.quellen_name).toLowerCase().includes(f));
+ $("#pill-count").textContent=list.length+" Artikel";
+ const used=new Set();
+ BLOCKS.forEach((b,bi)=>{
+  let items;
+  if(bi<BLOCKS.length-1){items=list.filter(a=>!used.has(a.link)&&b.filter(a));items.forEach(a=>used.add(a.link));}
+  else{items=list.filter(a=>!used.has(a.link));}
+  const card=document.createElement("div");card.className="card"+(b.id==="I"?" full":"");
+  const h=document.createElement("h2");h.innerHTML="<b>"+b.titel+"</b><span class='mini'>"+items.length+" Meldungen</span>";card.appendChild(h);
+  const body=document.createElement("div");body.className="card-body";
+  if(!items.length){body.innerHTML="<div class='empty'>Keine Meldungen – nach fetch.py-Ausführen oder Filter prüfen.</div>";}
+  if(b.detail&&items.length){
+   SUBS.forEach(s=>{
+    const si=items.filter(a=>gruppeZuSub(a)===s.id);
+    if(!si.length)return;
+    const d=document.createElement("div");d.className="sub";
+    d.innerHTML="<h3>"+s.t+"</h3>";
+    si.slice(0,5).forEach(a=>d.appendChild(artEl(a)));
+    body.appendChild(d);
+   });
+  }else{
+   items.slice(0,6).forEach(a=>body.appendChild(artEl(a)));
+  }
+  card.appendChild(body);grid.appendChild(card);
+ });
+}
+function artEl(a){
+ const d=document.createElement("div");d.className="art";
+ const kurz=period(a.kurz||"");
+ d.innerHTML="<h4><a href='"+a.link+"' target='_blank' rel='noopener'>"+escapeHtml(period(a.titel))+"</a></h4>"
+ +"<p>"+escapeHtml(kurz)+"</p>"
+ +"<div class='row'><span class='chip'>"+escapeHtml(a.quellen_name||a.quelle)+"</span>"
+ +"<span class='chip'>"+escapeHtml(a.gruppe||"")+"</span>"
+ +"<span class='chip owner'>"+escapeHtml((a.owner||"").slice(0,60))+"</span>"
+ +"<span class='mini'>"+escapeHtml((a.datum||"").slice(0,16))+"</span>"
+ +"<button class='speak'>▶ Vorlesen</button>"
+ +"<a class='mini' href='"+a.link+"' target='_blank' rel='noopener'>Original ↗</a></div>";
+ d.querySelector(".speak").onclick=()=>speak(period(a.titel)+" "+kurz);
+ return d;
+}
+function escapeHtml(s){return (s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+$("#q").addEventListener("input",e=>render(e.target.value));
+$("#btn-read-all").onclick=()=>{const t=ALL.slice(0,12).map(a=>period(a.titel)+". "+period(a.kurz)).join(" ");speak(t||"Keine Artikel geladen.");};
+$("#btn-today").onclick=()=>alert("Im Terminal im Projektordner ausführen:\npython3 fetch.py\npython3 fetch.py --export\nDann Seite neu laden.");
+async function load(){
+ let latest=null,quellen=null;
+ try{const r=await fetch("data/latest.json",{cache:"no-store"});if(r.ok)latest=await r.json();}catch(e){}
+ try{const r=await fetch("quellen.json",{cache:"no-store"});if(r.ok)quellen=await r.json();}catch(e){}
+ if(!latest&&window.__SNAPSHOT__){latest=window.__SNAPSHOT__;}
+ if(latest){
+  ALL=latest.artikel||[];
+  $("#pill-date").textContent="Stand: "+(latest.generated_at||"").slice(0,16).replace("T"," ");
+  const sv=$("#service");
+  const w=latest.wetter||{};
+  sv.innerHTML="<div class='sub'><h3>Wetter Dresden</h3><p style='font-size:13px'>"+escapeHtml(period(w.text||"Wetter derzeit nicht abrufbar."))+" <span class='mini'>Quelle: "+escapeHtml(w.quelle||"Open-Meteo")+"</span></p></div>"
+   +"<div class='sub'><h3>Verkehr (DVB/VVO)</h3><p style='font-size:13px'>Baustellen, Ersatzverkehr und Umleitungen bitte immer im Original prüfen, da RSS lückenhaft sein kann. Quellen: DVB-Verkehrsinfo und VVO-Fahrplan. Sätze abgeschlossen.</p><p><a href='https://www.dvb.de/de-de/' target='_blank' rel='noopener'>DVB ↗</a> · <a href='https://www.vvo-online.de/' target='_blank' rel='noopener'>VVO ↗</a> · <a href='https://www.dresden.de/de/rathaus/aktuelles/' target='_blank' rel='noopener'>Stadt Dresden ↗</a></p></div>";
+  const st=$("#stimmung");
+  st.innerHTML="<p style='font-size:13px'>"+escapeHtml(period((latest.stimmung&&latest.stimmung.text)||"Stimmung nur grob via Sonntagsumfrage und Wahlen."))+"</p><p><a href='https://www.wahlrecht.de/umfragen/' target='_blank' rel='noopener'>wahlrecht.de ↗</a> · <a href='https://www.bundeswahlleiterin.de/' target='_blank' rel='noopener'>Bundeswahlleiterin ↗</a></p>";
+ }
+ if(quellen){
+  const t=$("#owner-table");
+  quellen.quellen.forEach(q=>{
+   const tr=document.createElement("tr");
+   tr.innerHTML="<td>"+escapeHtml(q.name)+"</td><td>"+escapeHtml(q.owner)+" <span class='mini'>("+escapeHtml(q.geldhahn||"")+")</span></td><td>"+escapeHtml(q.gruppe)+"</td>";
+   t.appendChild(tr);
+  });
+ }else{
+  const t=$("#owner-table");
+  [["NIUS","NIUS Media GmbH (privat)","kritisch-inland"],["WELT","Axel Springer SE (privat)","kritisch-inland"],["Tagesschau","ARD (Rundfunkbeitrag)","oerr-mainstream"],["ZDF","ZDF (Rundfunkbeitrag)","oerr-mainstream"],["MDR Sachsen","MDR (Rundfunkbeitrag)","oerr-mainstream"],["SRF","SRG SSR (CH-Gebühr)","ausland-nachbarn"]].forEach(r=>{
+   const tr=document.createElement("tr");tr.innerHTML="<td>"+r[0]+"</td><td>"+r[1]+"</td><td>"+r[2]+"</td>";t.appendChild(tr);});
+ }
+ render("");
+ if(!ALL.length){
+  $("#pill-date").textContent="Noch keine Daten – fetch.py ausführen";
+  $("#service").innerHTML="<div class='empty'>Noch keine Daten. Bitte im Terminal: python3 fetch.py – dann neu laden.</div>";
+  $("#stimmung").innerHTML="<div class='empty'>Sonntagsumfrage + Wahlergebnisse nach Fetch verfügbar.</div>";
+ }
+}
+load();
+</script>
+</body>
+</html>

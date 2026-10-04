@@ -1,0 +1,368 @@
+{
+  "generated_at": "2026-10-04T21:45:34.867797+00:00",
+  "hinweis": "Kurzzusammenfassungen + Link, keine Volltexte. Sätze abgeschlossen.",
+  "wetter": {
+    "ok": true,
+    "text": "Dresden aktuell 13.0 °C. Heute max 19.2 °C, min 13.4 °C. Regenwahrscheinlichkeit max 0 Prozent.",
+    "quelle": "Open-Meteo (CC-BY 4.0)",
+    "raw_time": "2026-10-04T23:45"
+  },
+  "artikel": [
+    {
+      "quelle": "nius",
+      "quellen_name": "NIUS",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "NIUS Media GmbH (u. a. Julian Reichelt)",
+      "titel": "Sozialisten-Bürgermeister von Paris-St-Denis: „Liebe Jugendliche, macht weiter so!“.",
+      "link": "https://nius.de/ausland/sozialisten-buergermeister-von-paris-st-denis-liebe-jugendliche-macht-weiter-so",
+      "datum": "Sun, 04 Oct 2026 17:51:35 GMT",
+      "kurz": "Der Bürgermeister von Saint-Denis hat die Protestbewegung, die Frankreich seit Tagen erfährt, am Sonntag ausdrücklich zum Weitermachen aufgefordert."
+    },
+    {
+      "quelle": "nius",
+      "quellen_name": "NIUS",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "NIUS Media GmbH (u. a. Julian Reichelt)",
+      "titel": "Kipppunkt da! AfD 30 Prozent, CDU 18 Prozent.",
+      "link": "https://nius.de/nius-live/kipppunkt-da-afd-30-prozent-cdu-18-prozent",
+      "datum": "Sun, 04 Oct 2026 16:22:09 GMT",
+      "kurz": "Der Tag beginnt mit NIUS! Am Montag, den 5. Oktober, begrüßt NIUS-Moderator Alexander Kissler im NIUS Live-Studio seine Gäste: NIUS-Chefredakteur Julian Reichelt, NIUS-Politikchef Ralf Schuler und Reporter-Legende Waldemar Hartmann."
+    },
+    {
+      "quelle": "nius",
+      "quellen_name": "NIUS",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "NIUS Media GmbH (u. a. Julian Reichelt)",
+      "titel": "Warum man die Ukraine-Politik von Merz nicht nur kritisieren darf, sondern muss.",
+      "link": "https://nius.de/kommentar/warum-man-die-ukraine-politik-von-merz-nicht-nur-kritisieren-darf-sondern-muss",
+      "datum": "Sun, 04 Oct 2026 12:50:59 GMT",
+      "kurz": "Was genau wünschen sich die Kritiker der Ukraine-Hilfen genau? Das ist natürlich keine ernst gemeinte Frage, wie man an den gleich mitgelieferten Antworten in Form von Verunglimpfungsparolen erkennt. Die rhetorische Frage, die Bild-Journalist Paul Ronzheimer am Sonntag auf X."
+    },
+    {
+      "quelle": "nius",
+      "quellen_name": "NIUS",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "NIUS Media GmbH (u. a. Julian Reichelt)",
+      "titel": "Ceuta am Limit: Tausende Migranten campieren vor Europas Tor.",
+      "link": "https://nius.de/news/ceuta-am-limit-tausende-migranten-campieren-vor-europas-tor",
+      "datum": "Sun, 04 Oct 2026 12:11:34 GMT",
+      "kurz": "Zehntausende Menschen gelangten innerhalb kurzer Zeit nach Ceuta. Die spanischen Behörden sprechen von mehr als 72.000 Menschen, die die Grenze beziehungsweise die Stadt erreichten. Die Folgen sind noch Wochen später überall sichtbar. Ich wollte wissen, wie die Situation vor Ort."
+    },
+    {
+      "quelle": "welt",
+      "quellen_name": "WELT",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "Axel Springer SE",
+      "titel": "Klopps holpriger Start bringt auch Gewinner hervor.",
+      "link": "https://www.welt.de/sport/fussball/article6ac2b1a7219d17d68d771f9c/nationalelf-klopps-holpriger-start-bringt-auch-gewinner-hervor.html",
+      "datum": "Sun, 04 Oct 2026 21:30:42 GMT",
+      "kurz": "Der Nationalelf misslingt die Revanche gegen Griechenland. Die ersten Wochen unter Jürgen Klopp verlaufen weniger erfolgreich als erhofft. Einige Spieler profitieren. Der neue Bundestrainer wird nun wohl einiges ändern."
+    },
+    {
+      "quelle": "welt",
+      "quellen_name": "WELT",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "Axel Springer SE",
+      "titel": "„Ich bin sehr zufrieden, weil ich weiß, wo wir herkommen“, sagt Klopp.",
+      "link": "https://www.welt.de/sport/fussball/article6ac2bb1bb0ca83ad0a1d9296/remis-in-griechenland-ich-bin-sehr-zufrieden-weil-ich-weiss-wo-wir-herkommen-sagt-klopp.html",
+      "datum": "Sun, 04 Oct 2026 21:19:54 GMT",
+      "kurz": "Deutschland kommt in Griechenland nicht über ein torloses Unentschieden hinaus. Trotzdem ist Bundestrainer Jürgen Klopp mit der Leistung hochzufrieden. Er zieht nach vier Spielen eine erste Bilanz."
+    },
+    {
+      "quelle": "welt",
+      "quellen_name": "WELT",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "Axel Springer SE",
+      "titel": "Gefährliche KI? „Die Welt sollte akzeptieren, dass einige schlechte Dinge passieren“.",
+      "link": "https://www.welt.de/wirtschaft/article6ac25b1ec6253b9a73fa623e/ki-die-welt-sollte-akzeptieren-dass-einige-schlechte-dinge-passieren-sagt-sam-altman.html",
+      "datum": "Sun, 04 Oct 2026 21:00:19 GMT",
+      "kurz": "OpenAI-Chef Sam Altman hält manche Risiken Künstlicher Intelligenz für einen Preis, den die Gesellschaft zahlen sollte, weil der Nutzen der Technologie überwiege. Vom Rivalen Anthropic grenzte er sich in einem Interview teils deutlich ab."
+    },
+    {
+      "quelle": "welt",
+      "quellen_name": "WELT",
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "owner": "Axel Springer SE",
+      "titel": "Revanche verpasst – Deutschland kratzt gegen Griechenland nur am Sieg.",
+      "link": "https://www.welt.de/sport/fussball/article6ac2ae30219d17d68d771f6c/nations-league-revanche-verpasst-deutschland-kratzt-gegen-griechenland-nur-am-sieg.html",
+      "datum": "Sun, 04 Oct 2026 20:39:15 GMT",
+      "kurz": "Auf eine starke erste Halbzeit folgt eine verkrampfte zweite: Die deutsche Nationalmannschaft kommt in der Nations League in Griechenland nicht über ein torloses Remis hinaus. Trotzdem macht das Spiel Hoffnung."
+    },
+    {
+      "quelle": "srf",
+      "quellen_name": "SRF News",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "SRG SSR (öffentlich, Gebühren, CH)",
+      "titel": "Auswirkungen der Trockenheit – So trocken war es für Bäume und Tiere im Hitzesommer.",
+      "link": "https://www.srf.ch/news/schweiz/auswirkungen-der-trockenheit-so-trocken-war-es-fuer-baeume-und-tiere-im-hitzesommer",
+      "datum": "Sun, 04 Oct 2026 18:50:15 +0200",
+      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/0b003f.webp\" hspace=\"5\" align=\"left\" >Nach dem Sommer zeigen Messungen: Fast überall war der Wald zu trocken. Bäume und auch Tiere spüren den Wassermangel."
+    },
+    {
+      "quelle": "srf",
+      "quellen_name": "SRF News",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "SRG SSR (öffentlich, Gebühren, CH)",
+      "titel": "Steigende Gesundheitskosten – Die Community schlägt Lösungen vor – Experten antworten.",
+      "link": "https://www.srf.ch/news/dialog/steigende-gesundheitskosten-die-community-schlaegt-loesungen-vor-experten-antworten",
+      "datum": "Sun, 04 Oct 2026 18:01:28 +0200",
+      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/f889a3e.webp\" hspace=\"5\" align=\"left\" >Unsere User haben Vorschläge gemacht, was gegen die stetig steigenden Prämien zu tun wäre. Drei Expertinnen antworten."
+    },
+    {
+      "quelle": "srf",
+      "quellen_name": "SRF News",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "SRG SSR (öffentlich, Gebühren, CH)",
+      "titel": "Wiesn in München – Oktoberfest 2026 bricht Rekord: 7.4 Millionen Besucher.",
+      "link": "https://www.srf.ch/news/international/wiesn-in-muenchen-oktoberfest-2026-bricht-rekord-7-4-millionen-besucher",
+      "datum": "Sun, 04 Oct 2026 15:26:53 +0200",
+      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/4e020b4.webp\" hspace=\"5\" align=\"left\" >Auf dem Münchner Oktoberfest war noch nie so viel los wie in diesem Jahr. Doch es gab auch traurige Vorfälle."
+    },
+    {
+      "quelle": "srf",
+      "quellen_name": "SRF News",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "SRG SSR (öffentlich, Gebühren, CH)",
+      "titel": "Menschliches Gefässsystem – Unsere Gefässe – die Autobahnen des Körpers.",
+      "link": "https://www.srf.ch/wissen/gesundheit/menschliches-gefaesssystem-unsere-gefaesse-die-autobahnen-des-koerpers",
+      "datum": "Sun, 04 Oct 2026 19:51:05 +0200",
+      "kurz": "<img src=\"https://www.srf.ch/static/cms/images//320ws/b4ed9f.webp\" hspace=\"5\" align=\"left\" >Blutgefässe versorgen alle Organe mit Sauerstoff und Nährstoffen. Deshalb sollten wir Sorge zu ihnen tragen."
+    },
+    {
+      "quelle": "hungary_today",
+      "quellen_name": "Daily News Hungary",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Privat (HU, EN-Redaktion)",
+      "titel": "What the UAE aviation FZ1073 incident can teach Hungary about resilient critical systems.",
+      "link": "https://dailynewshungary.com/fz1073-security-lessons-hungary/",
+      "datum": "Sun, 04 Oct 2026 15:36:00 +0000",
+      "kurz": "Could an aviation security incident hold lessons for Hungary’s factories, logistics hubs and critical infrastructure? This analysis looks beyond the cockpit. Continue reading: https://dailynewshungary.com/fz1073-security-lessons-hungary/."
+    },
+    {
+      "quelle": "hungary_today",
+      "quellen_name": "Daily News Hungary",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Privat (HU, EN-Redaktion)",
+      "titel": "Budapest to get more police officers as public safety moves up the agenda.",
+      "link": "https://dailynewshungary.com/budapest-get-more-police-officers-2026/",
+      "datum": "Sun, 04 Oct 2026 04:34:00 +0000",
+      "kurz": "Budapest could soon see a visibly stronger police presence, with the government promising a significant increase in officers as public safety becomes a bigger focus in the capital. Continue reading: https://dailynewshungary.com/budapest-get-more-police-officers-2026/."
+    },
+    {
+      "quelle": "hungary_today",
+      "quellen_name": "Daily News Hungary",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Privat (HU, EN-Redaktion)",
+      "titel": "Missed the week in Hungary? Here are the key stories to know.",
+      "link": "https://dailynewshungary.com/missed-the-week-in-hungary-here-are-the-key-stories-to-know/",
+      "datum": "Sat, 03 Oct 2026 16:04:00 +0000",
+      "kurz": "The week in Hungary on the Substack newsletter: Continue reading: https://dailynewshungary.com/missed-the-week-in-hungary-here-are-the-key-stories-to-know/."
+    },
+    {
+      "quelle": "hungary_today",
+      "quellen_name": "Daily News Hungary",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Privat (HU, EN-Redaktion)",
+      "titel": "Hungarian payment technology powers transactions at Malaysia’s Sepang Circuit.",
+      "link": "https://dailynewshungary.com/hungarian-payment-tech-sepang-circuit/",
+      "datum": "Sat, 03 Oct 2026 14:25:00 +0000",
+      "kurz": "Hungarian fintech is making its mark in Southeast Asia. See how Festipay’s technology is being used at Sepang Circuit. Continue reading: https://dailynewshungary.com/hungarian-payment-tech-sepang-circuit/."
+    },
+    {
+      "quelle": "spectator_sk",
+      "quellen_name": "Slovak Spectator",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Petit Press (Slovakia)",
+      "titel": "South African runner claims Košice Peace Marathon title with personal-best time.",
+      "link": "https://spectator.sme.sk/sport/c/south-african-runner-claims-kosice-peace-marathon-title-with-personal-best-time?utm_source=rss&utm_medium=feed&utm_campaign=spectator-rss",
+      "datum": "Sun, 04 Oct 2026 19:18:35 +0200",
+      "kurz": "The best Slovak runners were Marek Hladík and Mária Danečková."
+    },
+    {
+      "quelle": "spectator_sk",
+      "quellen_name": "Slovak Spectator",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Petit Press (Slovakia)",
+      "titel": "Statue of controversial Soviet Marshal unveiled in eastern Slovakia.",
+      "link": "https://spectator.sme.sk/politics-and-society/c/statue-of-controversial-soviet-marshal-unveiled-in-eastern-slovakia?utm_source=rss&utm_medium=feed&utm_campaign=spectator-rss",
+      "datum": "Sun, 04 Oct 2026 14:41:29 +0200",
+      "kurz": "The monument was unveiled amid Russia’s ongoing war in neighbouring Ukraine."
+    },
+    {
+      "quelle": "spectator_sk",
+      "quellen_name": "Slovak Spectator",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Petit Press (Slovakia)",
+      "titel": "News digest: In Trnava, they've unearthed proof of an ancient Celtic settlement.",
+      "link": "https://spectator.sme.sk/politics-and-society/c/news-digest-in-trnava-they-ve-unearthed-proof-of-an-ancient-celtic-settlement?utm_source=rss&utm_medium=feed&utm_campaign=spectator-rss",
+      "datum": "Fri, 02 Oct 2026 21:25:57 +0200",
+      "kurz": "Coalition agrees next year's state budget, Bratislava unveils a newly renovated central square, and it's 100 years since the discovery of the popular Domica cave."
+    },
+    {
+      "quelle": "spectator_sk",
+      "quellen_name": "Slovak Spectator",
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "owner": "Petit Press (Slovakia)",
+      "titel": "Breakfast with a view: Slovakia on one side, and Hungary on the other.",
+      "link": "https://spectator.sme.sk/culture-and-lifestyle/c/breakfast-with-a-view-slovakia-on-one-side-and-hungary-on-the-other?utm_source=rss&utm_medium=feed&utm_campaign=spectator-rss",
+      "datum": "Fri, 02 Oct 2026 08:00:00 +0200",
+      "kurz": "A selection of short feel-good stories from Slovakia."
+    },
+    {
+      "quelle": "tagesschau",
+      "quellen_name": "Tagesschau",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ARD (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Schulze zu Sachsen-Anhalt: \"Es wird keiner von der CDU zur AfD wechseln\".",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/sachsen-anhalt-schulze-bab-100.html",
+      "datum": "Sun, 04 Oct 2026 20:40:10 +0200",
+      "kurz": "Die AfD will nach der Wahl in Sachsen-Anhalt regieren, doch ihr fehlt bisher eine Mehrheit. CDU-Fraktionschef Schulze bekräftigte im Bericht aus Berlin, dass die AfD bei der Ministerpräsidentenwahl nicht auf CDU-Stimmen setzen könne."
+    },
+    {
+      "quelle": "tagesschau",
+      "quellen_name": "Tagesschau",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ARD (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Regierung im Jemen verkündet Großoffensive gegen Huthi-Miliz.",
+      "link": "https://www.tagesschau.de/ausland/asien/jemen-huthi-kaempfe-100.html",
+      "datum": "Sun, 04 Oct 2026 19:43:26 +0200",
+      "kurz": "Nach militärischen Erfolgen der Huthi will Jemens international anerkannte Regierung nun in die Offensive gehen. Ziel sei es, das Land aus dem Griff der Miliz zu befreien. Doch das dürfte nicht so einfach sein. Von Anna Osius."
+    },
+    {
+      "quelle": "tagesschau",
+      "quellen_name": "Tagesschau",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ARD (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Pfefferspray-Angriff auf Linken-Geschäftsstelle in Oranienburg.",
+      "link": "https://www.tagesschau.de/inland/regional/brandenburg/rbb-oranienburg-angriff-auf-linken-veranstaltung-in-parteibuero-reizgas-versprueht-100.html",
+      "datum": "Sun, 04 Oct 2026 20:58:00 +0200",
+      "kurz": "Mitglieder der Linksjugend sind in der Geschäftsstelle der Linken in Oranienburg mit Pfefferspray attackiert worden. Die Polizei sucht nach drei Personen. Eine von ihnen soll kurz vor dem Angriff gefragt haben, ob man hier AfD wählen könne."
+    },
+    {
+      "quelle": "tagesschau",
+      "quellen_name": "Tagesschau",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ARD (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Merz: Ukraine-Hilfen \"notwendig für die Stabilität Europas\".",
+      "link": "https://www.tagesschau.de/ausland/europa/merz-kiew-ukraine-russland-100.html",
+      "datum": "Sun, 04 Oct 2026 18:43:05 +0200",
+      "kurz": "Kanzler Merz hat bei seinem Besuch in Kiew erneut Russland zu einem Ende des Krieges aufgefordert. Im Bericht aus Berlin sagte er, für die Stabilität Europas seien weitere Hilfen für die Ukraine wichtig - genau wie eine zuverlässige Bundesregierung."
+    },
+    {
+      "quelle": "zdf",
+      "quellen_name": "ZDF Nachrichten",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ZDF (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Botschaften über Botschaften.",
+      "link": "https://www.zdfheute.de/politik/ausland/merz-reiche-kiew-besuch-100.html",
+      "datum": "Sun, 4 Oct 2026 22:15:00 +0200",
+      "kurz": "Der Kanzler verbringt einen Tag in Kiew, erlebt ein knappes Dutzend Mal Luftalarm und platziert Botschaften in alle Himmelsrichtungen."
+    },
+    {
+      "quelle": "zdf",
+      "quellen_name": "ZDF Nachrichten",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ZDF (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Merz in Kiew: \"Auf unsere Hilfe könnt ihr weiter zählen\".",
+      "link": "https://www.zdfheute.de/politik/ausland/merz-kiew-ukraine-krieg-russland-putin-100.html",
+      "datum": "Sun, 4 Oct 2026 18:04:00 +0200",
+      "kurz": "Bei einem Besuch in Kiew bekräftigt Friedrich Merz die deutsche Unterstützung für die Ukraine, es soll neue Militärhilfe geben. Vor einer Ruine appelliert der Kanzler an Putin."
+    },
+    {
+      "quelle": "zdf",
+      "quellen_name": "ZDF Nachrichten",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ZDF (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Aktuelles zum Krieg in der Ukraine.",
+      "link": "https://www.zdfheute.de/politik/ausland/ukraine-russland-konflikt-blog-102.html",
+      "datum": "Sun, 4 Oct 2026 21:09:00 +0200",
+      "kurz": "Seit Februar 2022 führt Russland einen Angriffskrieg gegen die Ukraine, die Kämpfe dauern an. Alle Entwicklungen und Ukraine-News im Liveticker."
+    },
+    {
+      "quelle": "zdf",
+      "quellen_name": "ZDF Nachrichten",
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "owner": "ZDF (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Deutschland findet keine Lücke im griechischen Abwehrriegel.",
+      "link": "https://www.zdfheute.de/sport/fussball-nations-league/fussball-nations-league-griechenland-deutschland-tore-ergebnis-26-27-100.html",
+      "datum": "Sun, 4 Oct 2026 22:38:00 +0200",
+      "kurz": "Deutschland hat auch das zweite Nations-League-Spiel gegen Griechenland nicht gewonnen. In Thessaloniki fehlte auch etwas das Glück im Abschluss."
+    },
+    {
+      "quelle": "mdr_sachsen",
+      "quellen_name": "MDR Aktuell (Mitteldeutschland)",
+      "gruppe": "oerr-mainstream",
+      "region": "II-III",
+      "owner": "MDR (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "GEW drängt auf Arbeitszeiterfassung für Lehrer.",
+      "link": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/gew-thueringen-sachsen-arbeitszeiterfassung-lehrerinnen-und-lehrer-,arbeitszeiterfassung-lehrer-100.html",
+      "datum": "Sun, 04 Oct 2026 13:12:59 +0200",
+      "kurz": "Elterngespräche, Tagungen, Exkursionen - sollte diese Mehrarbeit im Lehrerberuf erfasst werden? Ja, sagt die Gewerkschaft GEW. Bremen ist schon einen Schritt weiter und startet ein Pilotprojekt."
+    },
+    {
+      "quelle": "mdr_sachsen",
+      "quellen_name": "MDR Aktuell (Mitteldeutschland)",
+      "gruppe": "oerr-mainstream",
+      "region": "II-III",
+      "owner": "MDR (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Migration: Immer weniger Asylsuchende in Sachsen-Anhalt.",
+      "link": "https://www.mdr.de/nachrichten/sachsen-anhalt/migration-asybewerber-zahlen-100,asylsuchende-rueckgang-100.html",
+      "datum": "Sun, 04 Oct 2026 17:19:38 +0200",
+      "kurz": "In Sachsen-Anhalt sind erneut deutlich weniger Asylsuchende registriert worden. Ministerium und Wissenschaft nennen unterschiedliche Gründe."
+    },
+    {
+      "quelle": "mdr_sachsen",
+      "quellen_name": "MDR Aktuell (Mitteldeutschland)",
+      "gruppe": "oerr-mainstream",
+      "region": "II-III",
+      "owner": "MDR (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Vom Lehrermangel zum Gänsehautmoment: Philharmonie unterstützt Musikunterricht in Greiz.",
+      "link": "https://www.mdr.de/nachrichten/thueringen/ost-thueringen/greiz/musikunterricht-schule-100.html",
+      "datum": "Sun, 04 Oct 2026 12:27:48 +0200",
+      "kurz": "Lehrermangel fiel der Musikunterricht an der Lessingschule in Greiz aus. Die Vogtland Philharmonie sprang ein und ermöglichte Schülern eine besondere musikalische Erfahrungen."
+    },
+    {
+      "quelle": "mdr_sachsen",
+      "quellen_name": "MDR Aktuell (Mitteldeutschland)",
+      "gruppe": "oerr-mainstream",
+      "region": "II-III",
+      "owner": "MDR (öffentlich-rechtlich, Rundfunkbeitrag)",
+      "titel": "Krankenhausstandort Pößneck soll erhalten bleiben.",
+      "link": "https://www.mdr.de/nachrichten/thueringen/ost-thueringen/saale-orla/standort-erhalt-foerdermittel-medizin-versorgung,krankenhaus-poessneck-100.html",
+      "datum": "Sun, 04 Oct 2026 16:03:30 +0200",
+      "kurz": "Der Krankenhausstandort Pößneck soll erhalten bleiben. Doch Finanzierung und Fördermittel bleiben weiterhin unklar."
+    }
+  ],
+  "stimmung": {
+    "quelle": "Sonntagsumfrage (z. B. infratest-dimap) + Wahlergebnisse (bundeswahlleiterin.de / wahlrecht.de)",
+    "text": "Stimmungsbild nur Gesamtdeutschland, grob via Sonntagsumfrage und Wahlen. Details per Link prüfen, nicht als Fakt übernehmen."
+  }
+}

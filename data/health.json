@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "check_zeit": "2026-10-04T21:45:34.867797+00:00",
+    "modus": "fetch",
+    "fresh_h": 48,
+    "stale_h": 96
+  },
+  "gruppen": {
+    "exekutive": {
+      "gesund": 0,
+      "aktiv": 1,
+      "mitglieder": [
+        "polizei_sachsen",
+        "stadt_dresden",
+        "dvb_verkehr",
+        "bundeswehr",
+        "bundeshaushalt"
+      ],
+      "quorum_ok": false
+    },
+    "judikative": {
+      "gesund": 0,
+      "aktiv": 0,
+      "mitglieder": [
+        "justiz_sachsen"
+      ],
+      "quorum_ok": false
+    },
+    "kritisch-inland": {
+      "gesund": 2,
+      "aktiv": 2,
+      "mitglieder": [
+        "nius",
+        "welt"
+      ],
+      "quorum_ok": true
+    },
+    "ausland-nachbarn": {
+      "gesund": 3,
+      "aktiv": 3,
+      "mitglieder": [
+        "srf",
+        "radio_prag",
+        "hungary_today",
+        "spectator_sk",
+        "ansa_en"
+      ],
+      "quorum_ok": true
+    },
+    "oerr-mainstream": {
+      "gesund": 3,
+      "aktiv": 3,
+      "mitglieder": [
+        "tagesschau",
+        "zdf",
+        "mdr_sachsen"
+      ],
+      "quorum_ok": true
+    }
+  },
+  "quellen": {
+    "polizei_sachsen": {
+      "status": "reserve_ruhig"
+    },
+    "stadt_dresden": {
+      "status": "reserve_ruhig"
+    },
+    "dvb_verkehr": {
+      "status": "reserve_ruhig"
+    },
+    "bundeswehr": {
+      "gruppe": "exekutive",
+      "region": "IV-V",
+      "tier": "backup",
+      "aktiv": true,
+      "rss_konfiguriert": "https://www.bundeswehr.de/de/rss",
+      "url_ok": "https://www.bundeswehr.de/de/rss",
+      "http": 200,
+      "items": 0,
+      "neueste": null,
+      "alter_h": null,
+      "status": "leer",
+      "fehler": null
+    },
+    "bundeshaushalt": {
+      "status": "reserve_ruhig"
+    },
+    "justiz_sachsen": {
+      "status": "reserve_ruhig"
+    },
+    "nius": {
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "tier": "primaer",
+      "aktiv": true,
+      "rss_konfiguriert": "https://www.nius.de/rss",
+      "url_ok": "https://www.nius.de/rss",
+      "http": 200,
+      "items": 50,
+      "neueste": "2026-10-04T17:51:35+00:00",
+      "alter_h": 3.9,
+      "status": "ok",
+      "fehler": null
+    },
+    "welt": {
+      "gruppe": "kritisch-inland",
+      "region": "III-V",
+      "tier": "primaer",
+      "aktiv": true,
+      "rss_konfiguriert": "https://www.welt.de/feeds/latest.rss",
+      "url_ok": "https://www.welt.de/feeds/latest.rss",
+      "http": 200,
+      "items": 30,
+      "neueste": "2026-10-04T21:30:42+00:00",
+      "alter_h": 0.2,
+      "status": "ok",
+      "fehler": null
+    },
+    "srf": {
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "tier": "primaer",
+      "aktiv": true,
+      "rss_konfiguriert": "https://www.srf.ch/news/bnf/rss/1646",
+      "url_ok": "https://www.srf.ch/news/bnf/rss/1646",
+      "http": 200,
+      "items": 80,
+      "neueste": "2026-10-04T21:40:32+00:00",
+      "alter_h": 0.1,
+      "status": "ok",
+      "fehler": null
+    },
+    "radio_prag": {
+      "status": "reserve_ruhig"
+    },
+    "hungary_today": {
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "tier": "backup",
+      "aktiv": true,
+      "rss_konfiguriert": "https://dailynewshungary.com/feed",
+      "url_ok": "https://dailynewshungary.com/feed",
+      "http": 200,
+      "items": 20,
+      "neueste": "2026-10-04T15:36:00+00:00",
+      "alter_h": 6.2,
+      "status": "ok",
+      "fehler": null
+    },
+    "spectator_sk": {
+      "gruppe": "ausland-nachbarn",
+      "region": "IV-V",
+      "tier": "backup",
+      "aktiv": true,
+      "rss_konfiguriert": "https://spectator.sme.sk/rss",
+      "url_ok": "https://spectator.sme.sk/rss",
+      "http": 200,
+      "items": 20,
+      "neueste": "2026-10-04T21:44:12+00:00",
+      "alter_h": 0.0,
+      "status": "ok",
+      "fehler": null
+    },
+    "ansa_en": {
+      "status": "reserve_ruhig"
+    },
+    "tagesschau": {
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "tier": "primaer",
+      "aktiv": true,
+      "rss_konfiguriert": "https://www.tagesschau.de/xml/rss2/",
+      "url_ok": "https://www.tagesschau.de/xml/rss2/",
+      "http": 200,
+      "items": 40,
+      "neueste": "2026-10-04T19:06:02+00:00",
+      "alter_h": 2.7,
+      "status": "ok",
+      "fehler": null
+    },
+    "zdf": {
+      "gruppe": "oerr-mainstream",
+      "region": "III-V",
+      "tier": "primaer",
+      "aktiv": true,
+      "rss_konfiguriert": "https://www.zdf.de/rss/zdf/nachrichten",
+      "url_ok": "https://www.zdf.de/rss/zdf/nachrichten",
+      "http": 200,
+      "items": 184,
+      "neueste": "2026-10-04T21:04:00+00:00",
+      "alter_h": 0.7,
+      "status": "ok",
+      "fehler": null
+    },
+    "mdr_sachsen": {
+      "gruppe": "oerr-mainstream",
+      "region": "II-III",
+      "tier": "primaer",
+      "aktiv": true,
+      "rss_konfiguriert": "https://www.mdr.de/nachrichten/index-rss.xml",
+      "url_ok": "https://www.mdr.de/nachrichten/index-rss.xml",
+      "http": 200,
+      "items": 44,
+      "neueste": "2026-10-04T21:36:06+00:00",
+      "alter_h": 0.2,
+      "status": "ok",
+      "fehler": null
+    }
+  },
+  "aktionen": [
+    "QUORUM exekutive: nur 0/1 gesund – Recherche-Bedarf",
+    "QUORUM judikative: nur 0/0 gesund – Recherche-Bedarf"
+  ],
+  "wetter_ok": true
+}

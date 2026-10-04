@@ -1,0 +1,5 @@
+__pycache__/
+*.bak
+*.bak-*
+data/*.bak
+index-export.html
