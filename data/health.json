@@ -1,6 +1,6 @@
 {
   "meta": {
-    "check_zeit": "2026-10-04T21:45:34.867797+00:00",
+    "check_zeit": "2026-10-04T22:20:31.041264+00:00",
     "modus": "fetch",
     "fresh_h": 48,
     "stale_h": 96
@@ -36,7 +36,7 @@
       "quorum_ok": true
     },
     "ausland-nachbarn": {
-      "gesund": 3,
+      "gesund": 2,
       "aktiv": 3,
       "mitglieder": [
         "srf",
@@ -74,13 +74,13 @@
       "tier": "backup",
       "aktiv": true,
       "rss_konfiguriert": "https://www.bundeswehr.de/de/rss",
-      "url_ok": "https://www.bundeswehr.de/de/rss",
-      "http": 200,
+      "url_ok": null,
+      "http": null,
       "items": 0,
       "neueste": null,
       "alter_h": null,
-      "status": "leer",
-      "fehler": null
+      "status": "fail",
+      "fehler": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
     },
     "bundeshaushalt": {
       "status": "reserve_ruhig"
@@ -98,7 +98,7 @@
       "http": 200,
       "items": 50,
       "neueste": "2026-10-04T17:51:35+00:00",
-      "alter_h": 3.9,
+      "alter_h": 4.5,
       "status": "ok",
       "fehler": null
     },
@@ -112,7 +112,7 @@
       "http": 200,
       "items": 30,
       "neueste": "2026-10-04T21:30:42+00:00",
-      "alter_h": 0.2,
+      "alter_h": 0.8,
       "status": "ok",
       "fehler": null
     },
@@ -125,7 +125,7 @@
       "url_ok": "https://www.srf.ch/news/bnf/rss/1646",
       "http": 200,
       "items": 80,
-      "neueste": "2026-10-04T21:40:32+00:00",
+      "neueste": "2026-10-04T22:15:55+00:00",
       "alter_h": 0.1,
       "status": "ok",
       "fehler": null
@@ -143,7 +143,7 @@
       "http": 200,
       "items": 20,
       "neueste": "2026-10-04T15:36:00+00:00",
-      "alter_h": 6.2,
+      "alter_h": 6.7,
       "status": "ok",
       "fehler": null
     },
@@ -153,13 +153,13 @@
       "tier": "backup",
       "aktiv": true,
       "rss_konfiguriert": "https://spectator.sme.sk/rss",
-      "url_ok": "https://spectator.sme.sk/rss",
-      "http": 200,
-      "items": 20,
-      "neueste": "2026-10-04T21:44:12+00:00",
-      "alter_h": 0.0,
-      "status": "ok",
-      "fehler": null
+      "url_ok": null,
+      "http": null,
+      "items": 0,
+      "neueste": null,
+      "alter_h": null,
+      "status": "fail",
+      "fehler": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     "ansa_en": {
       "status": "reserve_ruhig"
@@ -174,7 +174,7 @@
       "http": 200,
       "items": 40,
       "neueste": "2026-10-04T19:06:02+00:00",
-      "alter_h": 2.7,
+      "alter_h": 3.2,
       "status": "ok",
       "fehler": null
     },
@@ -186,9 +186,9 @@
       "rss_konfiguriert": "https://www.zdf.de/rss/zdf/nachrichten",
       "url_ok": "https://www.zdf.de/rss/zdf/nachrichten",
       "http": 200,
-      "items": 184,
-      "neueste": "2026-10-04T21:04:00+00:00",
-      "alter_h": 0.7,
+      "items": 186,
+      "neueste": "2026-10-04T22:00:00+00:00",
+      "alter_h": 0.3,
       "status": "ok",
       "fehler": null
     },
@@ -202,7 +202,7 @@
       "http": 200,
       "items": 44,
       "neueste": "2026-10-04T21:36:06+00:00",
-      "alter_h": 0.2,
+      "alter_h": 0.7,
       "status": "ok",
       "fehler": null
     }

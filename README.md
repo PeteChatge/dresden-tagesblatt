@@ -9,11 +9,12 @@ Prio: 1) Exekutive (Polizei vor Judikative), 2) Verwaltung/Amtsblatt/DVB, 3) NIU
 ## Benutzung
 
 ```bash
-python3 fetch.py            # holen + heilen (nur Standardbibliothek)
-python3 fetch.py --dry-run  # nur prüfen
-python3 fetch.py --alle     # auch Reserven testen
-python3 fetch.py --export   # zusätzlich index-export.html bauen
+python fetch.py            # holen + heilen (nur Standardbibliothek)
+python fetch.py --dry-run  # nur prüfen
+python fetch.py --alle     # auch Reserven testen
+python fetch.py --export   # zusätzlich index-export.html bauen
 ```
+Hinweis: Auf Windows heißt der Befehl `python`, auf Linux/Mac meist `python3`. Alternativ Doppelklick auf `aktualisiere_zeitung.bat` (Windows).
 
 Danach `index.html` im Browser öffnen (lädt `data/latest.json`). Für GitHub Pages `index-export.html` verwenden.
 

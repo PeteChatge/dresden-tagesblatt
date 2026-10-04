@@ -10,11 +10,11 @@ Nur Standardbibliothek. Aufgaben:
   5. Optional --export: baut index-export.html (monolithisch, JSON eingebettet)
      für GitHub Pages / Weitergabe als Einzeldatei.
 
-Aufruf:
-  python3 fetch.py              # holen + heilen
-  python3 fetch.py --dry-run    # nur prüfen
-  python3 fetch.py --alle       # auch Reserven testen
-  python3 fetch.py --export     # zusätzlich Einzeldatei-Export bauen
+Aufruf (Windows: python, Linux/Mac: python3):
+  python fetch.py              # holen + heilen
+  python fetch.py --dry-run    # nur prüfen
+  python fetch.py --alle       # auch Reserven testen
+  python fetch.py --export     # zusätzlich Einzeldatei-Export bauen
 """
 import json, sys, ssl, re, shutil, html
 from pathlib import Path
@@ -51,13 +51,26 @@ def ensure_period(s: str) -> str:
         return s if s[-1] in ".!?" else s[:-1].strip() + "."
     return s + "."
 
-def clean_text(t: str, limit: int = 280) -> str:
+KURZ_LIMIT = 700  # Auszugslänge: ausführlich genug für eigenes Bild, kein Volltext
+
+def clean_text(t: str, limit: int = KURZ_LIMIT) -> str:
     t = (t or "").replace("<![CDATA[", "").replace("]]>", "")
     t = html.unescape(re.sub(r"<[^>]+>", " ", t))
     t = re.sub(r"\s+", " ", t).strip()
     if len(t) > limit:
-        cut = t[:limit].rsplit(" ", 1)[0]
-        t = cut if cut else t[:limit]
+        # Satzweise kürzen: möglichst an einem Satzende nahe dem Limit trennen,
+        # damit keine Fantasie-Lücken durch abgerissene Halbsätze entstehen.
+        fenster = t[:limit + 300]
+        # Satzenden (Satzzeichen + Leerzeichen/Großbuchstabe/Ende) im Fenster suchen
+        enden = [m.end() for m in re.finditer(r"[.!?](?=\s+[A-ZÄÖÜ„\"'(\[]|\s*$)", fenster)]
+        nahe = [e for e in enden if e >= limit * 0.6]
+        if nahe:
+            # Nächstes Satzende ab Limit nehmen, sonst letztes davor
+            nach = [e for e in nahe if e >= limit]
+            t = fenster[:min(nach) if nach else max(nahe)].strip()
+        else:
+            cut = t[:limit].rsplit(" ", 1)[0]
+            t = cut if cut else t[:limit]
     return ensure_period(t)
 
 def hole(url: str, timeout: int = 12, max_bytes: int = 300_000) -> tuple:
@@ -100,7 +113,7 @@ def extrahiere_artikel(roh: str, max_n: int = 6):
             if mg:
                 link = mg.group(0)
         pub = tag("pubDate") or tag("dc:date") or tag("published") or tag("updated")
-        desc = clean_text(tag("description") or tag("summary") or tag("content:encoded"), 280)
+        desc = clean_text(tag("content:encoded") or tag("description") or tag("summary"))
         if title and link.startswith("http"):
             out.append({"titel": title, "link": link, "datum": pub[:64], "kurz": desc})
     # Atom-Fallback
@@ -118,7 +131,7 @@ def extrahiere_artikel(roh: str, max_n: int = 6):
             if title and link.startswith("http"):
                 out.append({"titel": title, "link": link,
                             "datum": (pm.group(1).strip()[:64] if pm else ""),
-                            "kurz": clean_text(sm.group(1) if sm else "", 280)})
+                            "kurz": clean_text(sm.group(1) if sm else "")})
     return out
 
 def hole_wetter():
@@ -157,7 +170,7 @@ def pruefe(q, fresh_h, stale_h, mit_fallbacks=True):
                 st = "stale"
             else:
                 st = "versiegelt"
-            arts = extrahiere_artikel(roh, 6) if st in ("ok", "ok_ohne_datum", "stale") else []
+            arts = extrahiere_artikel(roh, 8) if st in ("ok", "ok_ohne_datum", "stale") else []
             return {"url_ok": url, "http": http, "items": items, "neueste": neueste.isoformat() if neueste else None,
                     "alter_h": alter, "status": st, "fehler": None, "artikel": arts}
         except Exception as e:
@@ -184,7 +197,7 @@ def haupt():
         e = {"gruppe": q["gruppe"], "region": q.get("region", "?"), "tier": q["tier"],
              "aktiv": q.get("aktiv"), "rss_konfiguriert": q["rss"], **r}
         erg[q["id"]] = e
-        for a in r.get("artikel", [])[:4]:
+        for a in r.get("artikel", [])[:6]:
             artikel_ges.append({"quelle": q["id"], "quellen_name": q["name"],
                                 "gruppe": q["gruppe"], "region": q.get("region", "?"),
                                 "owner": q.get("owner", ""), **a})
@@ -228,7 +241,7 @@ def haupt():
 
     jetzt = datetime.now(timezone.utc).isoformat()
     latest = {"generated_at": jetzt, "hinweis": "Kurzzusammenfassungen + Link, keine Volltexte. Sätze abgeschlossen.",
-              "wetter": wetter, "artikel": artikel_ges[:60],
+              "wetter": wetter, "artikel": artikel_ges[:80],
               "stimmung": {"quelle": "Sonntagsumfrage (z. B. infratest-dimap) + Wahlergebnisse (bundeswahlleiterin.de / wahlrecht.de)",
                            "text": "Stimmungsbild nur Gesamtdeutschland, grob via Sonntagsumfrage und Wahlen. Details per Link prüfen, nicht als Fakt übernehmen."}}
     health = {"meta": {"check_zeit": jetzt, "modus": "dry-run" if dry else "fetch",
@@ -255,11 +268,22 @@ def haupt():
     for g, v in gruppen.items():
         print(f"[{'OK ' if v['quorum_ok'] else 'BEDARF'}] {g:18} gesund={v['gesund']}/{v['aktiv']}")
 
-    if do_export and INDEX_DATEI.exists():
+    if not dry and INDEX_DATEI.exists():
         tpl = INDEX_DATEI.read_text(encoding="utf-8")
+        # Alten eingebetteten Snapshot für saubere Vorlage entfernen
+        tpl_clean = re.sub(r"/\*__SNAPSHOT_START__\*/.*?/\*__SNAPSHOT_END__\*/",
+                           "/*__SNAPSHOT_START__*/\n/*__SNAPSHOT_END__*/",
+                           tpl, flags=re.S)
         snap = json.dumps(latest, ensure_ascii=False).replace("</", "<\\/")
-        out = tpl.replace("/*__SNAPSHOT__*/", f"window.__SNAPSHOT__={snap};")
-        EXPORT_DATEI.write_text(out, encoding="utf-8")
+        eingebettet = f"/*__SNAPSHOT_START__*/\nwindow.__SNAPSHOT__={snap};\n/*__SNAPSHOT_END__*/"
+        # 1. index.html selbst auffüllen (funktioniert per Doppelklick/file://)
+        out_index = tpl_clean.replace("/*__SNAPSHOT_START__*/\n/*__SNAPSHOT_END__*/", eingebettet)
+        if out_index != tpl:
+            shutil.copy2(INDEX_DATEI, INDEX_DATEI.with_suffix(".html.bak"))
+            INDEX_DATEI.write_text(out_index, encoding="utf-8")
+            print(f"Eingebettet: {INDEX_DATEI.name} (Doppelklick-fähig)")
+        # 2. Monolith-Kopie für GitHub Pages / Weitergabe
+        EXPORT_DATEI.write_text(out_index, encoding="utf-8")
         print(f"Export: {EXPORT_DATEI.name}")
 
 if __name__ == "__main__":

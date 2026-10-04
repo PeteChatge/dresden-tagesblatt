@@ -1,2 +1,5 @@
-python3 fetch.py
-python3 fetch.py --export
+@echo off
+cd /d "%~dp0"
+python fetch.py
+python fetch.py --export
+pause
